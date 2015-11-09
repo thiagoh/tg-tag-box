@@ -129,7 +129,7 @@
                     if (findIndex(scope.results, result) === -1) {
 
                         scope.results.push(result);
-                        scope.output.push(result);
+                        scope.output.push(result.value);
 
                         query.val('');
 
