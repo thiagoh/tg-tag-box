@@ -1,0 +1,64 @@
+
+div.tg-tag-box.outer {
+	position: relative;
+}
+
+div.tg-tag-box .inner {
+	position: absolute;
+	background: #FFFFFF;
+	color: #FFFFFF;
+	border: 1px solid #111111;
+	padding: 5px 10px;
+}
+
+div.tg-tag-box div.fake-input input {
+	min-width: 20px;
+	border: none !important; 
+	box-shadow: none !important; 
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important; 
+	outline: 0 !important; 
+	padding: 0 !important;
+	margin: 4px 3px 0;
+	background-color: transparent !important; 
+	line-height: 25px;
+}
+
+div.tg-tag-box div.fake-input {
+	border: 1px solid #ccc;
+	line-height: 40px;
+	min-width: 400px;
+
+    cursor: text;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div.tg-tag-box div.fake-input .chosen-wrapper{
+
+	display: inline-block;
+}
+
+div.tg-tag-box div.fake-input .chose {
+	cursor: pointer;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+    padding: 4px 10px;
+    margin: 4px;
+    background: #5084C8;
+    line-height: 22px;
+}
+
+div.tg-tag-box .item {
+	cursor: pointer;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+    padding: 4px 10px;
+    margin: 4px;
+    background: #5084C8;
+    line-height: 22px;
+}
