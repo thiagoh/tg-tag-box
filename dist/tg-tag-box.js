@@ -60,9 +60,11 @@
 
                 scope.results = [];
                 scope.output = [];
-
+                query.val('');
+                
                 if (scope.userOutput) {
                     scope.output = scope.userOutput;
+                    [].push.apply(scope.results, scope.userOutput.map(processEntry));
                 }
 
                 if (scope.userSearch) {
@@ -70,7 +72,6 @@
                 }
 
                 scope.focus = function focus() {
-
                     query[0].focus();
                 };
 
@@ -94,9 +95,12 @@
                     event.stopPropagation();
 
                     if (findIndex(scope.results, result) === -1) {
+
                         scope.results.push(result);
                         scope.output.push(result.value);
+
                         query.val('');
+
                         scope.keyup();
                         scope.focus();
                     }
