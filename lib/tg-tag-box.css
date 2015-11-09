@@ -37,12 +37,17 @@ div.tg-tag-box div.fake-input {
 }
 
 div.tg-tag-box div.fake-input .chosen-wrapper{
-
 	display: inline-block;
 }
 
-div.tg-tag-box div.fake-input .chose {
+div.tg-tag-box div.fake-input .delete {
 	cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 3px;
+}
+
+div.tg-tag-box div.fake-input .chose {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
