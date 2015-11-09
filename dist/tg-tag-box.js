@@ -1,4 +1,4 @@
-/*! tg-tag-box - v0.1.0 - 2015-11-08
+/*! tg-tag-box - v0.1.0 - 2015-11-09
 * https://github.com/thiago/tg-tag-box
 * Copyright (c) 2015 Thiago Andrade; Licensed MIT */
 /*jslint node: true */
@@ -43,13 +43,14 @@
                         if (typeof cur === 'object') {
 
                             obj = angular.extend({}, cur);
+                            obj.value = cur;
 
                         } else {
 
                             obj = {
+                                value: cur,
                                 label: cur,
-                                id: cur,
-                                value: cur
+                                id: cur
                             };
                         }
 
@@ -128,7 +129,7 @@
                     if (findIndex(scope.results, result) === -1) {
 
                         scope.results.push(result);
-                        scope.output.push(result.value);
+                        scope.output.push(result);
 
                         query.val('');
 
